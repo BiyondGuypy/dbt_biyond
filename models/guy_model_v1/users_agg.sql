@@ -1,4 +1,3 @@
-set statement_timeout to 36000;
 
 with user_cte as (
 select userid,
