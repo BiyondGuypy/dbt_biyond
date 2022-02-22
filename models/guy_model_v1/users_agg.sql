@@ -9,4 +9,4 @@ dbt_biyond.users
 on buyerid=userid
 group by userid)
 
-select *  from user_cte ;
+select * from user_cte 
