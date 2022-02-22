@@ -10,4 +10,4 @@ dbt_biyond.users
 on buyerid=userid
 group by userid)
 
-select *  from user_cte limit 100;
+select *  from user_cte ;
