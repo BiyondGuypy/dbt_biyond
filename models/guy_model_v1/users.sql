@@ -4,4 +4,4 @@ SELECT *
 FROM "dev"."dbt_biyond"."users" 
 )
 
-select * from user_cte ;
+select * from user_cte
