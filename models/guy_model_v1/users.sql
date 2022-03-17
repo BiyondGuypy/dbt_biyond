@@ -1,12 +1,7 @@
 
 with user_cte as (
-select userid,
-       min(saletime) as first_purchase,
-       max(saletime) as last_purchase
-from dbt_biyond.sales
-inner join
-dbt_biyond.users
-on buyerid=userid
-group by userid)
+SELECT * 
+FROM "dev"."dbt_biyond"."users" 
+)
 
-select * from user_cte 
+select * from user_cte ;
