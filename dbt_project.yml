@@ -35,5 +35,7 @@ models:
   my_new_project:
     guy_model_v1:
       materialized: ephemeral
+    write_to_db:
+      materialized: table
 
   
