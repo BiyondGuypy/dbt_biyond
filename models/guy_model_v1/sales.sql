@@ -1,7 +1,7 @@
 
 with cte_sales as (
 select *     
-FROM dbt_biyond.sales 
+FROM "dev"."dbt_biyond"."users" 
 )
 
 select * 
