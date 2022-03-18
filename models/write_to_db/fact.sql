@@ -12,7 +12,7 @@ from
 inner join 
 {{ref('users')}} T2
 on T1.buyerid=T2.userid
-group by dateid
+group by dateid,buyerid
 )
 
 select *
