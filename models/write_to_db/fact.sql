@@ -6,7 +6,7 @@
 }}
 
 with fact as (
-SELECT dateid,sum(pricepaid),state
+SELECT dateid,buyerid,sum(pricepaid)
 from
 {{ref('sales')}} T1
 inner join 
