@@ -6,13 +6,16 @@
 }}
 
 with fact as (
-SELECT dateid,buyerid,sum(pricepaid)
-from
-{{ref('sales')}} T1
+SELECT 
+buyerid,
+caldate,
+sum(pricepaid) as daily_pricepaid,
+sum(commission) as daily_commission
+from {{ref('sales')}} T1
 inner join 
 {{ref('users')}} T2
 on T1.buyerid=T2.userid
-group by dateid,buyerid
+group by buyerid,caldate
 )
 
 select *

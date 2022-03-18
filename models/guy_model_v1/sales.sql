@@ -1,8 +1,15 @@
 
 with cte_sales as (
-select *     
-FROM "dev"."dbt_biyond"."sales" 
-where dateid ={{ var('dateid') }}
+select 
+buyerid,
+caldate,
+pricepaid,
+commission
+FROM "dev"."dbt_biyond"."sales"  T1
+inner join 
+{{ref('date_dim')}} T2
+on T1.dateid=T2.dateid
+where T1.dateid ={{ var('dateid') }}
 )
 
 select * 
