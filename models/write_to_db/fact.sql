@@ -1,10 +1,3 @@
-
-
-select
-    order_id,
-
-
-
 {{
     config(
         materialized='incremental'
