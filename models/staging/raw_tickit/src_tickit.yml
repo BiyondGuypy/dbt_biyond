@@ -1,0 +1,11 @@
+version: 2
+sources:
+  - name: raw_tickit
+    database: dev
+    schema: datalake_external
+    tables:
+    - name: sales_raw
+    - name: users_raw
+    - name: listing
+    - name: venue
+    - name: category
