@@ -1,3 +1,3 @@
 
 select * 
-from {{ source('raw_tickit','sales') }}
+from {{ source('raw_tickit','sales_raw') }}
